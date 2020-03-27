@@ -27,24 +27,24 @@ namespace FollowMouse
         {
             // Do whatever you want here.
             if (GetAsyncKeyState(Keys.Up) != 0) {
-                goose.targetPos=new Vector2(goose.position.x, goose.position.y- goose.currentSpeed/10);
+                goose.targetPos=new Vector2(goose.position.x, goose.position.y- goose.currentSpeed);
 
                 API.Goose.setCurrentTaskByID(goose, "ArrowControl", true);
             }
             if (GetAsyncKeyState(Keys.Down) != 0)
             {
-                goose.targetPos = new Vector2(goose.position.x, goose.position.y+ goose.currentSpeed/10);
+                goose.targetPos = new Vector2(goose.position.x, goose.position.y+ goose.currentSpeed);
                 API.Goose.setCurrentTaskByID(goose, "ArrowControl", true);
                 
             }
             if (GetAsyncKeyState(Keys.Left) != 0)
             {
-                goose.targetPos = new Vector2(goose.position.x - goose.currentSpeed/10 , goose.position.y);
+                goose.targetPos = new Vector2(goose.position.x - goose.currentSpeed , goose.position.y);
                 API.Goose.setCurrentTaskByID(goose, "ArrowControl", true);
             }
             if (GetAsyncKeyState(Keys.Right) != 0)
             {
-                goose.targetPos = new Vector2(goose.position.x + goose.currentSpeed/10, goose.position.y);
+                goose.targetPos = new Vector2(goose.position.x + goose.currentSpeed, goose.position.y);
                 API.Goose.setCurrentTaskByID(goose, "ArrowControl", true);
             }
         }
