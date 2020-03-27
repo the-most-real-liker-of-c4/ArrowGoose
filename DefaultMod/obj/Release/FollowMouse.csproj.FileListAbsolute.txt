@@ -1,0 +1,14 @@
+C:\Users\allon\Desktop\GooseMod_DefaultSolution\DefaultMod\bin\Release\DefaultMod.dll
+C:\Users\allon\Desktop\GooseMod_DefaultSolution\DefaultMod\bin\Release\DefaultMod.pdb
+C:\Users\allon\Desktop\GooseMod_DefaultSolution\DefaultMod\bin\Release\GooseModdingAPI.dll
+C:\Users\allon\Desktop\GooseMod_DefaultSolution\DefaultMod\bin\Release\GooseModdingAPI.pdb
+C:\Users\allon\Desktop\GooseMod_DefaultSolution\DefaultMod\obj\Release\FollowMouse.csprojResolveAssemblyReference.cache
+C:\Users\allon\Desktop\GooseMod_DefaultSolution\DefaultMod\obj\Release\DefaultMod.dll
+C:\Users\allon\Desktop\GooseMod_DefaultSolution\DefaultMod\obj\Release\DefaultMod.pdb
+C:\Users\allon\Desktop\newMod\DefaultMod\bin\Release\DefaultMod.dll
+C:\Users\allon\Desktop\newMod\DefaultMod\bin\Release\DefaultMod.pdb
+C:\Users\allon\Desktop\newMod\DefaultMod\bin\Release\GooseModdingAPI.dll
+C:\Users\allon\Desktop\newMod\DefaultMod\bin\Release\GooseModdingAPI.pdb
+C:\Users\allon\Desktop\newMod\DefaultMod\obj\Release\FollowMouse.csprojResolveAssemblyReference.cache
+C:\Users\allon\Desktop\newMod\DefaultMod\obj\Release\DefaultMod.dll
+C:\Users\allon\Desktop\newMod\DefaultMod\obj\Release\DefaultMod.pdb
