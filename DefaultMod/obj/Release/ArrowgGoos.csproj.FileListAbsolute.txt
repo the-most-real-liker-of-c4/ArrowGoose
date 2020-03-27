@@ -7,6 +7,5 @@ C:\Users\allon\Desktop\newMod\DefaultMod\obj\Release\ArrowGoos.dll
 C:\Users\allon\Desktop\newMod\DefaultMod\obj\Release\ArrowGoos.pdb
 C:\Users\allon\Desktop\DesktopGoose v0.3\Assets\Mods\ArrowGoos\ArrowGoos.dll
 C:\Users\allon\Desktop\DesktopGoose v0.3\Assets\Mods\ArrowGoos\ArrowGoos.pdb
-C:\Users\allon\Desktop\ArrowGoose\DefaultMod\obj\Release\ArrowgGoos.csprojResolveAssemblyReference.cache
 C:\Users\allon\Desktop\ArrowGoose\DefaultMod\obj\Release\ArrowGoos.dll
 C:\Users\allon\Desktop\ArrowGoose\DefaultMod\obj\Release\ArrowGoos.pdb

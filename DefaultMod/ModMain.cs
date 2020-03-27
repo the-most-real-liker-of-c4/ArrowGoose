@@ -21,32 +21,67 @@ namespace FollowMouse
         {
             // Subscribe to whatever events we want
             InjectionPoints.PostTickEvent += PostTick;
+            
         }
 
+        
         public void PostTick(GooseEntity goose)
         {
-            // Do whatever you want here.
-            if (GetAsyncKeyState(Keys.Up) != 0) {
-                goose.targetPos=new Vector2(goose.position.x, goose.position.y- goose.currentSpeed);
 
-                API.Goose.setCurrentTaskByID(goose, "ArrowControl", true);
+            if (goose.currentTask==0) {
+                if (GetAsyncKeyState(Keys.Up) != 0)
+                {
+                    goose.targetPos = new Vector2(goose.position.x, goose.position.y -1);
+
+
+                    API.Goose.setCurrentTaskByID(goose, "ArrowControl", false);
+                }
+                if (GetAsyncKeyState(Keys.Down) != 0)
+                {
+                    goose.targetPos = new Vector2(goose.position.x, goose.position.y +1);
+                    API.Goose.setCurrentTaskByID(goose, "ArrowControl", false);
+
+                }
+                if (GetAsyncKeyState(Keys.Left) != 0)
+                {
+                    goose.targetPos = new Vector2(goose.position.x -1, goose.position.y);
+                    API.Goose.setCurrentTaskByID(goose, "ArrowControl", false);
+                }
+                if (GetAsyncKeyState(Keys.Right) != 0)
+                {
+                    goose.targetPos = new Vector2(goose.position.x +1, goose.position.y);
+                    API.Goose.setCurrentTaskByID(goose, "ArrowControl", false);
+                }
             }
-            if (GetAsyncKeyState(Keys.Down) != 0)
+            // Do whatever you want here.
+            if (API.Goose.isGooseAtTarget(goose, 1))
             {
-                goose.targetPos = new Vector2(goose.position.x, goose.position.y+ goose.currentSpeed);
-                API.Goose.setCurrentTaskByID(goose, "ArrowControl", true);
+                if (GetAsyncKeyState(Keys.Up) != 0)
+                {
+                    goose.targetPos = new Vector2(goose.position.x, goose.position.y -10);
+
+
+                    API.Goose.setCurrentTaskByID(goose, "ArrowControl", false);
+                }
+                if (GetAsyncKeyState(Keys.Down) != 0)
+                {
+                    goose.targetPos = new Vector2(goose.position.x, goose.position.y +10);
+                    API.Goose.setCurrentTaskByID(goose, "ArrowControl", false);
+
+                }
+                if (GetAsyncKeyState(Keys.Left) != 0)
+                {
+                    goose.targetPos = new Vector2(goose.position.x -10, goose.position.y);
+                    API.Goose.setCurrentTaskByID(goose, "ArrowControl", false);
+                }
+                if (GetAsyncKeyState(Keys.Right) != 0)
+                {
+                    goose.targetPos = new Vector2(goose.position.x +10, goose.position.y);
+                    API.Goose.setCurrentTaskByID(goose, "ArrowControl", false);
+                }
                 
             }
-            if (GetAsyncKeyState(Keys.Left) != 0)
-            {
-                goose.targetPos = new Vector2(goose.position.x - goose.currentSpeed , goose.position.y);
-                API.Goose.setCurrentTaskByID(goose, "ArrowControl", true);
-            }
-            if (GetAsyncKeyState(Keys.Right) != 0)
-            {
-                goose.targetPos = new Vector2(goose.position.x + goose.currentSpeed, goose.position.y);
-                API.Goose.setCurrentTaskByID(goose, "ArrowControl", true);
-            }
+            
         }
     }
 }

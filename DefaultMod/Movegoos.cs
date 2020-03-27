@@ -49,6 +49,7 @@ namespace DefaultMod
             MoveGoos taskData = new MoveGoos();
             taskData.timeStarted = Time.time;
             taskData.originalAcceleration = goose.currentAcceleration;
+            
             return taskData;
         }
 
@@ -62,7 +63,7 @@ namespace DefaultMod
 
 
 
-            if(Time.time-data.timeStarted > 0.5)
+            if(Time.time-data.timeStarted > 0.2)
             {
                 
                 // Set our goose's state to its default. Wandering around.
